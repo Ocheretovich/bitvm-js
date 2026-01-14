@@ -1,4 +1,3 @@
-import {program, data} from './dummy-program.js'
 import {blake3, BLAKE3_160} from '../libs/blake3.js'
 import {Tx} from '../libs/tapscript.js'
 import {fromHex, toHex} from '../libs/bytes.js'
@@ -36,6 +35,5 @@ const onShake = (socket, clientId, msg) => {
 
 const onEndState = (socket, clientId, msg) => {
     const theirEndState = msg.endState
-    // const endState = runVM(program, data)
     // console.log(theirEndState, endState)
 }
